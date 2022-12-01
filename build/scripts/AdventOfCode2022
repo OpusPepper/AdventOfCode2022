@@ -201,7 +201,7 @@ fi
 
 set -- \
         -classpath "$CLASSPATH" \
-        dev.opuspepper.gradle.exec.Main \
+        dev.opuspepper.Main \
         "$@"
 
 # Use "xargs" to parse quoted args.

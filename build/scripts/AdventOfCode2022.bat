@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\AdventOfCode2022-1.0-SNAPSHOT.jar
 
 
 @rem Execute AdventOfCode2022
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %ADVENT_OF_CODE2022_OPTS%  -classpath "%CLASSPATH%" dev.opuspepper.gradle.exec.Main %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %ADVENT_OF_CODE2022_OPTS%  -classpath "%CLASSPATH%" dev.opuspepper.Main %*
 
 :end
 @rem End local scope for the variables with windows NT shell
