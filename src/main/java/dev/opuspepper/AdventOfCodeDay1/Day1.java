@@ -1,5 +1,6 @@
 package dev.opuspepper.AdventOfCodeDay1;
 
+import dev.opuspepper.abstracts.Day;
 import dev.opuspepper.helper.FileReader;
 
 import java.io.File;
@@ -7,7 +8,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Day1 {
+public class Day1 extends Day {
+    public void getDay()
+    {
+        day = 1;
+    }
     public void part1(File inputFile, String inputLabel)
     {
         //File inputFile = new File("C:\\Users\\CPJSa\\GitHub\\OpusPepper\\AdventOfCode2022\\src\\main\\resources\\Day1Part1Example.txt");
