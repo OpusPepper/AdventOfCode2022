@@ -12,10 +12,8 @@ public class Main {
         System.out.println("Starting application");
 
         final var basePath = "C:\\Users\\CPJSa\\GitHub\\OpusPepper\\AdventOfCode2022\\src\\main\\resources\\";
-        System.out.println("Starting application");
-        System.out.println("Starting day 1");
 
-        int dayNumber = 1;
+        int dayNumber = 2;
         int partNumber = 2;
         int filePartNumber = 1;
         String postFix = "Input";
@@ -23,6 +21,7 @@ public class Main {
 
         GetDayFactory dayFactory = new GetDayFactory();
         Day day = dayFactory.getDay(dayNumber);
+        System.out.println("Starting day " + dayNumber + " part " + partNumber);
 
         File inputFile = new File(basePath, fileNamer.getFileName());
         switch(partNumber)

@@ -55,6 +55,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -83,6 +84,8 @@
       <recent name="C:\Users\CPJSa\GitHub\OpusPepper\AdventOfCode2022\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.opuspepper.AdventOfCodeDay2.objects" />
+      <recent name="dev.opuspepper.AdventOfCodeDay2" />
       <recent name="dev.opuspepper.AdventOfCodeDay1Part1" />
     </key>
   </component>
