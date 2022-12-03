@@ -13,7 +13,7 @@ public class Main {
 
         final var basePath = "C:\\Users\\CPJSa\\GitHub\\OpusPepper\\AdventOfCode2022\\src\\main\\resources\\";
 
-        int dayNumber = 2;
+        int dayNumber = 3;
         int partNumber = 2;
         int filePartNumber = 1;
         String postFix = "Input";
