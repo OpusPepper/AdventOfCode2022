@@ -4,33 +4,34 @@ import dev.opuspepper.AdventOfCodeDay1.Day1;
 import dev.opuspepper.abstracts.Day;
 import dev.opuspepper.factory.GetDayFactory;
 import dev.opuspepper.helper.FileNamer;
+import dev.opuspepper.helper.FileReader;
 
 import java.io.File;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Starting application");
 
-        final var basePath = "C:\\Users\\CPJSa\\GitHub\\OpusPepper\\AdventOfCode2022\\src\\main\\resources\\";
-
-        int dayNumber = 3;
+        int dayNumber = 4;
         int partNumber = 2;
         int filePartNumber = 1;
-        String postFix = "Input";
+        String postFix = "Input";  // "Example" or "Input"
         FileNamer fileNamer = new FileNamer(dayNumber, filePartNumber, postFix);
 
         GetDayFactory dayFactory = new GetDayFactory();
         Day day = dayFactory.getDay(dayNumber);
         System.out.println("Starting day " + dayNumber + " part " + partNumber);
 
-        File inputFile = new File(basePath, fileNamer.getFileName());
+        List<String> recordsIn = FileReader.getFileReader().getRecords(dayNumber, filePartNumber, postFix);
+
         switch(partNumber)
         {
             case 1:
-                day.part1(inputFile, fileNamer.getLabel());
+                day.part1(recordsIn, fileNamer.getLabel());
                 break;
             case 2:
-                day.part2(inputFile, fileNamer.getLabel());
+                day.part2(recordsIn, fileNamer.getLabel());
                 break;
             default:
                 System.out.println("Part " + partNumber + " not found");
@@ -40,4 +41,6 @@ public class Main {
 
         System.out.println("Ending application");
     }
+
+
 }

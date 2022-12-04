@@ -4,6 +4,7 @@ import dev.opuspepper.AdventOfCodeDay2.objects.Game;
 import dev.opuspepper.AdventOfCodeDay2.objects.GamePart2;
 import dev.opuspepper.AdventOfCodeDay2.objects.Move;
 import dev.opuspepper.abstracts.Day;
+import dev.opuspepper.abstracts.DayOrig;
 import dev.opuspepper.helper.FileReader;
 
 import java.io.File;
@@ -16,13 +17,11 @@ public class Day2 extends Day {
     {
         day = 2;
     }
-    public void part1(File inputFile, String inputLabel)
+    public void part1(List<String> recordsIn, String inputLabel)
     {
         //File inputFile = new File("C:\\Users\\CPJSa\\GitHub\\OpusPepper\\AdventOfCode2022\\src\\main\\resources\\Day1Part1Example.txt");
         System.out.println("Starting " + inputLabel);
-        FileReader fileReader = new FileReader();
 
-        List<String> recordsIn = fileReader.readFile(inputFile);
         int player1Score = 0;
         int player2Score = 0;
         for (String s:recordsIn) {
@@ -48,13 +47,11 @@ public class Day2 extends Day {
         System.out.println("Ending " + inputLabel);
     }
 
-    public void part2(File inputFile, String inputLabel)
+    public void part2(List<String> recordsIn, String inputLabel)
     {
         //File inputFile = new File("C:\\Users\\CPJSa\\GitHub\\OpusPepper\\AdventOfCode2022\\src\\main\\resources\\Day1Part1Example.txt");
         System.out.println("Starting " + inputLabel);
-        FileReader fileReader = new FileReader();
 
-        List<String> recordsIn = fileReader.readFile(inputFile);
         int player1Score = 0;
         int player2Score = 0;
         for (String s:recordsIn) {

@@ -1,6 +1,7 @@
 package dev.opuspepper.AdventOfCodeDay1;
 
 import dev.opuspepper.abstracts.Day;
+import dev.opuspepper.abstracts.DayOrig;
 import dev.opuspepper.helper.FileReader;
 
 import java.io.File;
@@ -13,13 +14,11 @@ public class Day1 extends Day {
     {
         day = 1;
     }
-    public void part1(File inputFile, String inputLabel)
+    public void part1(List<String> recordsIn, String inputLabel)
     {
         //File inputFile = new File("C:\\Users\\CPJSa\\GitHub\\OpusPepper\\AdventOfCode2022\\src\\main\\resources\\Day1Part1Example.txt");
         System.out.println("Starting " + inputLabel);
-        FileReader fileReader = new FileReader();
 
-        List<String> recordsIn = fileReader.readFile(inputFile);
         ArrayList<Integer> totalCalories = new ArrayList<>();
         Integer totalTemp = 0;
         for (String s: recordsIn) {
@@ -58,13 +57,11 @@ public class Day1 extends Day {
         System.out.println("Ending " + inputLabel);
     }
 
-    public void part2(File inputFile, String inputLabel)
+    public void part2(List<String> recordsIn, String inputLabel)
     {
         //File inputFile = new File("C:\\Users\\CPJSa\\GitHub\\OpusPepper\\AdventOfCode2022\\src\\main\\resources\\Day1Part1Example.txt");
         System.out.println("Starting " + inputLabel);
-        FileReader fileReader = new FileReader();
 
-        List<String> recordsIn = fileReader.readFile(inputFile);
         ArrayList<Integer> totalCalories = new ArrayList<>();
         Integer totalTemp = 0;
         for (String s: recordsIn) {

@@ -6,6 +6,7 @@ import dev.opuspepper.AdventOfCodeDay2.objects.Move;
 import dev.opuspepper.AdventOfCodeDay3.objects.Rucksack;
 import dev.opuspepper.AdventOfCodeDay3.objects.RucksackGroup;
 import dev.opuspepper.abstracts.Day;
+import dev.opuspepper.abstracts.DayOrig;
 import dev.opuspepper.helper.FileReader;
 
 import java.io.File;
@@ -17,15 +18,14 @@ import java.util.List;
 public class Day3 extends Day {
     public void getDay()
     {
-        day = 2;
+        day = 3;
     }
-    public void part1(File inputFile, String inputLabel)
+    public void part1(List<String> recordsIn, String inputLabel)
     {
         System.out.println("Starting " + inputLabel);
-        FileReader fileReader = new FileReader();
+
         ArrayList<Integer> listOfPrioritySums = new ArrayList<Integer>();
 
-        List<String> recordsIn = fileReader.readFile(inputFile);
         for (String s : recordsIn
              ) {
             Rucksack newRucksack = new Rucksack(s);
@@ -47,12 +47,11 @@ public class Day3 extends Day {
         System.out.println("Ending " + inputLabel);
     }
 
-    public void part2(File inputFile, String inputLabel) {
+    public void part2(List<String> recordsIn, String inputLabel) {
         System.out.println("Starting " + inputLabel);
-        FileReader fileReader = new FileReader();
+
         ArrayList<Integer> listOfPrioritySums = new ArrayList<Integer>();
 
-        List<String> recordsIn = fileReader.readFile(inputFile);
         Integer rucksackGroupCounter = 0;
         RucksackGroup rucksackGroup = new RucksackGroup();
         ArrayList<RucksackGroup> rucksackGroups = new ArrayList<RucksackGroup>();
