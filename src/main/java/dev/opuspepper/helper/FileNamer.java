@@ -2,7 +2,7 @@ package dev.opuspepper.helper;
 
 public class FileNamer {
 
-    public static final String TXTCONST = ".txt";
+    public static final String TXTEXTENSION = ".txt";
     public static final String DAYCONST = "Day";
     public static final String PARTCONST = "Part";
 
@@ -18,7 +18,7 @@ public class FileNamer {
     private String label = "";
 
     public String getFileName () {
-        return getLabel() + TXTCONST;
+        return getLabel() + TXTEXTENSION;
     }
 
     public String getLabel() {
