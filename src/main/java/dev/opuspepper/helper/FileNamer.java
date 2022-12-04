@@ -15,7 +15,6 @@ public class FileNamer {
     private final int day;
     private final int part;
     private final String postFix;
-    private String label = "";
 
     public String getFileName () {
         return getLabel() + TXTEXTENSION;
