@@ -1,12 +1,8 @@
 package dev.opuspepper.AdventOfCodeDay4;
 
-import dev.opuspepper.AdventOfCodeDay3.objects.Rucksack;
-import dev.opuspepper.AdventOfCodeDay3.objects.RucksackGroup;
 import dev.opuspepper.AdventOfCodeDay4.objects.Assignment;
 import dev.opuspepper.abstracts.Day;
-import dev.opuspepper.helper.FileReader;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +14,7 @@ public class Day4 extends Day {
     public void part1(List<String> recordsIn, String inputLabel)
     {
         System.out.println("Starting " + inputLabel);
-        ArrayList<String> listOfDuplicatedAssignments = new ArrayList<String>();
+        ArrayList<String> listOfDuplicatedAssignments = new ArrayList<>();
 
         for (String s : recordsIn
              ) {
@@ -39,7 +35,7 @@ public class Day4 extends Day {
 
     public void part2(List<String> recordsIn, String inputLabel) {
         System.out.println("Starting " + inputLabel);
-        ArrayList<String> listOfAnyDuplicatedAssignments = new ArrayList<String>();
+        ArrayList<String> listOfAnyDuplicatedAssignments = new ArrayList<>();
 
         for (String s : recordsIn
         ) {

@@ -1,13 +1,12 @@
 package dev.opuspepper;
 
-import dev.opuspepper.AdventOfCodeDay1.Day1;
 import dev.opuspepper.abstracts.Day;
 import dev.opuspepper.factory.GetDayFactory;
 import dev.opuspepper.helper.FileNamer;
-import dev.opuspepper.helper.FileReader;
 
-import java.io.File;
 import java.util.List;
+
+import static dev.opuspepper.helper.FileReader.getFileReader;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,19 +22,12 @@ public class Main {
         Day day = dayFactory.getDay(dayNumber);
         System.out.println("Starting day " + dayNumber + " part " + partNumber);
 
-        List<String> recordsIn = FileReader.getFileReader().getRecords(dayNumber, filePartNumber, postFix);
+        List<String> recordsIn = getFileReader().getRecords(dayNumber, filePartNumber, postFix);
 
-        switch(partNumber)
-        {
-            case 1:
-                day.part1(recordsIn, fileNamer.getLabel());
-                break;
-            case 2:
-                day.part2(recordsIn, fileNamer.getLabel());
-                break;
-            default:
-                System.out.println("Part " + partNumber + " not found");
-                break;
+        switch (partNumber) {
+            case 1 -> day.part1(recordsIn, fileNamer.getLabel());
+            case 2 -> day.part2(recordsIn, fileNamer.getLabel());
+            default -> System.out.println("Part " + partNumber + " not found");
         }
 
 

@@ -1,23 +1,27 @@
 package dev.opuspepper.helper;
 
 public class FileNamer {
+
+    public static final String TXTCONST = ".txt";
+    public static final String DAYCONST = "Day";
+    public static final String PARTCONST = "Part";
+
     public FileNamer(int day, int part, String postFix) {
         this.day = day;
         this.part = part;
         this.postFix = postFix;
     }
 
-    private int day = 0;
-    private int part = 0;
-    private String postFix = "";
+    private final int day;
+    private final int part;
+    private final String postFix;
     private String label = "";
 
     public String getFileName () {
-        label = "Day" + day + "Part" + part + postFix;
-        return label + ".txt";
+        return getLabel() + TXTCONST;
     }
 
     public String getLabel() {
-        return label;
+        return DAYCONST + day + PARTCONST + part + postFix;
     }
 }
