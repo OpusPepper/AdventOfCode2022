@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Starting application");
 
-        int dayNumber = 4;
+        int dayNumber = 5;
         int partNumber = 2;
         int filePartNumber = 1;
         String postFix = "Input";  // "Example" or "Input"

@@ -84,11 +84,11 @@
       <recent name="C:\Users\CPJSa\GitHub\OpusPepper\AdventOfCode2022\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.opuspepper.AdventOfCodeDay6" />
+      <recent name="dev.opuspepper.AdventOfCodeDay5" />
       <recent name="dev.opuspepper.abstracts" />
       <recent name="dev.opuspepper.AdventOfCodeDay4" />
       <recent name="dev.opuspepper.AdventOfCodeDay2.objects" />
-      <recent name="dev.opuspepper.AdventOfCodeDay2" />
-      <recent name="dev.opuspepper.AdventOfCodeDay1Part1" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.AdventOfCode2022 [run]">
@@ -151,5 +151,12 @@
       <updated>1669920078158</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="dev.opuspepper.AdventOfCodeDay5.objects.Instruction" memberName="instruction" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
