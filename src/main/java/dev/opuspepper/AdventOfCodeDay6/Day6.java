@@ -2,6 +2,7 @@ package dev.opuspepper.AdventOfCodeDay6;
 
 import dev.opuspepper.AdventOfCodeDay5.objects.CrateStack;
 import dev.opuspepper.AdventOfCodeDay5.objects.Instruction;
+import dev.opuspepper.AdventOfCodeDay6.objects.DataStream;
 import dev.opuspepper.abstracts.Day;
 
 import java.util.ArrayList;
@@ -16,11 +17,11 @@ public class Day6 extends Day {
     {
         System.out.println("Starting " + inputLabel);
 
+        DataStream dataStream = new DataStream(recordsIn.get(0));
 
-        for (String s : recordsIn
-             ) {
+        System.out.println("The sequence is: " + dataStream.getStartOfPacketMarker().toString());
 
-        }
+        System.out.println("The position of the sequence ends: " + dataStream.getPositionOfStartOfPacketMarker());
 
 
 
@@ -30,12 +31,11 @@ public class Day6 extends Day {
     public void part2(List<String> recordsIn, String inputLabel) {
         System.out.println("Starting " + inputLabel);
 
-        for (String s : recordsIn
-        ) {
+        DataStream dataStream = new DataStream(recordsIn.get(0));
 
-        }
+        System.out.println("The sequence is: " + dataStream.getStartOfMessageMarker().toString());
 
-
+        System.out.println("The position of the sequence ends: " + dataStream.getPositionOfStartOfMessageMarker());
 
         System.out.println("Ending " + inputLabel);
     }
