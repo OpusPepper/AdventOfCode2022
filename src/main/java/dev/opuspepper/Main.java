@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Starting application");
 
         int dayNumber = 7;
-        int partNumber = 1;
+        int partNumber = 2;
         int filePartNumber = 1;
         String postFix = "Input";  // "Example" or "Input"
         FileNamer fileNamer = new FileNamer(dayNumber, filePartNumber, postFix);
