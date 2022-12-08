@@ -7,6 +7,7 @@ import dev.opuspepper.AdventOfCodeDay4.Day4;
 import dev.opuspepper.AdventOfCodeDay5.Day5;
 import dev.opuspepper.AdventOfCodeDay6.Day6;
 import dev.opuspepper.AdventOfCodeDay7.Day7;
+import dev.opuspepper.AdventOfCodeDay8.Day8;
 import dev.opuspepper.abstracts.Day;
 
 public class GetDayFactory {
@@ -28,6 +29,8 @@ public class GetDayFactory {
                 return new Day6();
             case 7:
                 return new Day7();
+            case 8:
+                return new Day8();
             default:
                 return null;
         }
