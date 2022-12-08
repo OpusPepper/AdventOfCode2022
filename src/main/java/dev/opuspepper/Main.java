@@ -12,10 +12,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Starting application");
 
-        int dayNumber = 8;
-        int partNumber = 2;
+        int dayNumber = 9;
+        int partNumber = 1;
         int filePartNumber = 1;
-        String postFix = "Input";  // "Example" or "Input"
+        String postFix = "Example";  // "Example" or "Input"
         FileNamer fileNamer = new FileNamer(dayNumber, filePartNumber, postFix);
 
         GetDayFactory dayFactory = new GetDayFactory();
