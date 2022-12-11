@@ -12,10 +12,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Starting application");
 
-        int dayNumber = 9;
-        int partNumber = 1;
+        int dayNumber = 10;
+        int partNumber = 2;
         int filePartNumber = 1;
-        String postFix = "Example";  // "Example" or "Input"
+        String postFix = "Input";  // "Example" or "Input"
         FileNamer fileNamer = new FileNamer(dayNumber, filePartNumber, postFix);
 
         GetDayFactory dayFactory = new GetDayFactory();
@@ -23,6 +23,7 @@ public class Main {
         System.out.println("Starting day " + dayNumber + " part " + partNumber);
 
         List<String> recordsIn = getFileReader().getRecords(dayNumber, filePartNumber, postFix);
+        System.out.println("Total moves read in: "+  recordsIn.size());
 
         switch (partNumber) {
             case 1 -> day.part1(recordsIn, fileNamer.getLabel());
